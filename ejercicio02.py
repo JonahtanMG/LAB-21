@@ -19,7 +19,7 @@ class Libro:
     def getAutor(self):
         return self.autor
     
-    def getNombre(self):
+    def getTitulo(self):
         return self.titulo
     
     def getDisponibilidad(self):
@@ -43,10 +43,11 @@ class Biblioteca:
                 return libro
 
         print("Libro no encontrado")
+        return None
 
     def prestar_libro(self, titulo):
         for libro in self.libros:
-            if(libro.getTitulo == titulo):
+            if(libro.getTitulo() == titulo):
                 if(libro.getDisponibilidad() == True):
                     libro.prestar()
                     print("Se presto correctamente")
