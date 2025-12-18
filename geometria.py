@@ -47,16 +47,3 @@ class Circulo(Figura):
     
     def perimetro(self):
         return f"Perimetro {round(2*self.radio*3.14,2)}"
-    
-rectangulo = Rectangulo("Rectangulo 01", 10, 20)
-triangulo = Triangulo("Triangulo 01", 3, 4, 5)
-circulo = Circulo("Cirulo 01", 5)
-lista = []
-lista.append(rectangulo)
-lista.append(triangulo)
-lista.append(circulo)
-
-for figura in lista:
-    print(figura.nombre_figura())
-    print(figura.area())
-    print(figura.perimetro())

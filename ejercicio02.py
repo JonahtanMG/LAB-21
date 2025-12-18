@@ -75,18 +75,15 @@ biblioteca.agragar_libro(libro02)
 biblioteca.agragar_libro(libro03)
 biblioteca.agragar_libro(digital01)
 biblioteca.agragar_libro(digital02)
-
+# Presta el libro
 biblioteca.prestar_libro("Libro 01")
-
+# Presta 5 veces un libro digital
 biblioteca.prestar_libro("Libro 04")
 biblioteca.prestar_libro("Libro 04")
 biblioteca.prestar_libro("Libro 04")
 biblioteca.prestar_libro("Libro 04")
 biblioteca.prestar_libro("Libro 04")
-
+# Presta un libro ya prestado
 biblioteca.prestar_libro("LIbro 01")
-
-print(biblioteca.buscar("Autor 01"))
-
-
-
+# Busca un libro por autor
+print(biblioteca.buscar("Autor 01").getTitulo())
